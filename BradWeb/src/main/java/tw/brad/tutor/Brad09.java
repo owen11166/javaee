@@ -13,8 +13,7 @@ import java.io.IOException;
 /**
  * Servlet implementation class Brad09
  */
-@MultipartConfig(location = "C:\\Users\\User\\eclipse-workspace\\Work\\BradWeb\\src\\main\\webapp\\upload"
-
+@MultipartConfig(location = "C:\\Users\\User\\git\\repository3\\BradWeb\\src\\main\\webapp\\upload"
 )
 public class Brad09 extends HttpServlet {
 
