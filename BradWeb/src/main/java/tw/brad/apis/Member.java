@@ -3,6 +3,15 @@ package tw.brad.apis;
 public class Member {
 	private int id;
 	private String account, realname, birthday;
+	private boolean isMale;
+	
+	public boolean isMale() {
+		return isMale;
+	}
+
+	public void setMale(boolean isMale) {
+		this.isMale = isMale;
+	}
 
 	public Member() {
 
