@@ -27,12 +27,36 @@ public class BradUtils {
 		return sb.toString();
 		
 	}
+	
 	public static String sayYa() {
 		return "Ya";
 	}
-	public static String calc(String x,String y) {
-		int intX=Integer.parseInt(x);
-		int intY=Integer.parseInt(y);
-		return ""+(intX+intY);
+	public static String sayYa(String name) {
+		return String.format("Ya! %s", name);
+	}
+	public static String calc(String x, String y, String op) {
+		try {
+			int intX = Integer.parseInt(x);
+			int intY = Integer.parseInt(y);
+			int r, mod;
+			r = mod = 0;
+			String ret = "";
+			
+			switch(op) {
+				case "1": r = intX + intY; ret += r; break;  
+				case "2": r = intX - intY; ret += r; break;  
+				case "3": r = intX * intY; ret += r; break;  
+				case "4": 
+					r = intX / intY;
+					mod = intX % intY;
+					ret += r + " ... " + mod; 
+					break;  
+			}
+			return ret;
+			
+		}catch(Exception e) {
+			return "";
+		}
+		
 	}
 }
