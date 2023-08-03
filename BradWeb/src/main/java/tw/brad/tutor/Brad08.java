@@ -6,6 +6,7 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.Arrays;
 
 /**
  * Servlet implementation class Brad08
@@ -22,9 +23,7 @@ public class Brad08 extends HttpServlet {
 		String[] hobbies = request.getParameterValues("hobby");
 
 		System.out.println(account + ":" + passwd + ":" + gender);
-		for (String hobby : hobbies) {
-			System.out.println(hobby);
-		}
+		Arrays.stream(hobbies).forEach(hobby->System.out.println(hobby));
 		response.setContentType("text/html;charset=utf-8");
 
 	}

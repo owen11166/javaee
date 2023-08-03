@@ -30,8 +30,6 @@ public class Brad11 extends HttpServlet {
 		//super.service(req, resp);
 	}
 
-
-
 	@Override
 	public void service(ServletRequest req, ServletResponse res) throws ServletException, IOException {
 		System.out.println("service(2)");
@@ -65,4 +63,3 @@ public class Brad11 extends HttpServlet {
 	}
 
 }
-
