@@ -12,6 +12,7 @@ String r=(String)request.getAttribute("r");
 		<title>Insert title here</title>
 	</head>
 	<body>
+		I am brad31
 		<form  action="brad30.jsp">
 			<input name="x" value="<%=x %>"/>
 			+

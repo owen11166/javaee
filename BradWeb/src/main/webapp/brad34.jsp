@@ -7,12 +7,13 @@
 		<title>Insert title here</title>
 	</head>
 	<body>
-	<form action="brad35.jsp">
-	Account:<input name="account"/><br/>
-	Realname:<input name="realname"/><br/>
-	Birthday:<input type="date" name="birthday"/> <br/>
-	<input type="submit" value="ok"> 
+
+		<form action="brad35.jsp">
+			Account: <input name="account" /><br />
+			Realname: <input name="realName" /><br />
+			Birthday: <input type="date" name="birthday" /><br />
+			<input type="submit" value="OK" />
+		</form>
 	
-	</form>
 	</body>
 </html>

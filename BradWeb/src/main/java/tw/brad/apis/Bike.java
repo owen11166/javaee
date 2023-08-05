@@ -2,38 +2,34 @@ package tw.brad.apis;
 
 import java.io.Serializable;
 
-public class Bike implements Serializable {
-	protected int speed;
-	protected int color;
-	protected String name;
-
+public class Bike implements Serializable{
+	protected double speed;
+	public String owner;
+	
+	// 建構式/子/方法
+//	public Bike() {
+//		System.out.println("Bike()");
+//	}
 	public Bike(String name) {
-		this.name = name;
+		System.out.println("Bike(String)");
+		owner = name;
 	}
-
-	public Bike() {
-
-	}
-
-	public Bike(int speed, char color) {
-		this.speed = speed;
-		this.color = color;
-	}
-
+	
 	public void upSpeed() {
-		this.speed += 10;
+		speed = speed < 1 ? 1 : speed * 1.2;
 	}
-
+	
 	public void downSpeed() {
-		this.speed -= 10;
+		speed = speed < 1 ? 0 : speed * 0.5;
 	}
-
-	public void setSpeed(int speed) {
-		this.speed = speed;
-	}
-
-	public int getSpeed() {
+	
+	public double getSpeed() {
 		return speed;
 	}
-
+	
+	public String toString() {
+		return "My speed is " + speed;
+	}
+	
+	
 }

@@ -23,7 +23,7 @@ page import="tw.brad.apis.*"
 			<c:when test="${score>=90}">A</c:when>
 			<c:when test="${score>=80}">B</c:when>
 			<c:when test="${score>=70}">C</c:when>
-			<c:when test="${score>=60 }">D</c:when>
+			<c:when test="${score>=60}">D</c:when>
 			<c:otherwise>E</c:otherwise>
 		</c:choose>
 	</body>

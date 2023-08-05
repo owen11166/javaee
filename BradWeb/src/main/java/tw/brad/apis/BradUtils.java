@@ -38,11 +38,16 @@ public class BradUtils {
 		try {
 			int intX = Integer.parseInt(x);
 			int intY = Integer.parseInt(y);
-			int r, mod;
-			r = mod = 0;
+			//int r, mod;
+			//r = mod = 0;
 			String ret = "";
 			
 			switch(op) {
+			case "1"-> ret+=intX+intY;
+			case "2"-> ret+=intX-intY;
+			case "3"-> ret+=intX*intY;
+			case "4"-> ret+=intX/intY+"...."+intX%intY;
+				/*
 				case "1": r = intX + intY; ret += r; break;  
 				case "2": r = intX - intY; ret += r; break;  
 				case "3": r = intX * intY; ret += r; break;  
@@ -51,6 +56,7 @@ public class BradUtils {
 					mod = intX % intY;
 					ret += r + " ... " + mod; 
 					break;  
+				*/
 			}
 			return ret;
 			

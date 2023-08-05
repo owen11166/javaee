@@ -16,7 +16,7 @@
 				<option value="3" ${(param.op=="3")?"selected":"" }>乘</option>
 				<option value="4" ${(param.op=="4")?"selected":"" }>除</option>
 			</select>
-			<input name="y" value="${param.y }">
+			<input name="y" value="${param.y}">
 			<input type="submit" value="=">
 			<span>${BradUtils.calc(param.x, param.y, param.op) }</span>
 		</form>	
