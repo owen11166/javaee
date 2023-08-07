@@ -1,3 +1,5 @@
+
+<%@page import="tw.brad.apis.Member"%>
 <%@page import="tw.brad.apis.BCrypt"%>
 <%@page import="java.sql.ResultSet"%>
 <%@page import="java.sql.PreparedStatement"%>
@@ -20,6 +22,7 @@
 	if (rs.next()){
 		String hashPasswd = rs.getString("passwd");
 		if (BCrypt.checkpw(passwd, hashPasswd)){
+			Member member=new  Member(rs.getInt("id"),rs.getString("account"),rs.getString("cname"),null);
 			response.sendRedirect("main.jsp");
 		}else{
 			session.invalidate();
