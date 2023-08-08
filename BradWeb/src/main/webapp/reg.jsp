@@ -57,7 +57,6 @@
 		pstmt.setString(2, BCrypt.hashpw(passwd, BCrypt.gensalt()));
 		pstmt.setString(3, cname);
 		int num = pstmt.executeUpdate();
-		
 		if (num > 0){
 			response.sendRedirect("login.html");
 		}
